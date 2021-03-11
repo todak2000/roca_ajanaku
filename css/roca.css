@@ -142,6 +142,10 @@ body{
 #services{
     background-color: rgba(255, 74, 74, 0.16);
 }
+#testimonials{
+    background-color: #3A5987;
+    padding: 2% 10% 4% 10%;
+}
 
 .right, .left, .lefty, .righty{
     width:50%;
@@ -192,7 +196,7 @@ body{
     font-size: 48px;
     color: #A0616A;
 }
-#team > h3{
+#team > h3, #contact-us >h3{
     font-family: Poppins;
     font-size: 48px;
     color: #A0616A;
@@ -203,6 +207,12 @@ body{
     font-size: 24px;
     line-height: 36px;
     color: #A0616A;
+}
+#testimonials >h3{
+    font-family: Poppins;
+    font-size: 48px;
+    color: #BDD7FF;
+    text-align: center;
 }
 .lefty > h3{
     font-family: Poppins;
@@ -225,6 +235,13 @@ body{
     display: inline-block;
     margin-bottom:0.7rem;
     background-color: #3A5987;
+}
+#bluy-line{
+    width: 203px;
+    height: 5px;
+    display: inline-block;
+    margin-bottom:0.7rem;
+    background-color: #BDD7FF;
 }
 .img-service{
     margin-left:4rem;
@@ -387,9 +404,123 @@ body{
     #red-line{
         display: none;
     }
-    #team > h3{
+    #bluy-line{
+        display: none;
+    }
+    #testimonials >h3{
+        font-family: Poppins;
+        font-size: 30px;
+    }
+    /* #team > h3{
         font-family: Poppins;
         font-size: 30px;
         color: #A0616A;
+    } */
+    #team > h3, #contact-us > h3{
+        font-family: Poppins;
+        font-size: 30px;
+        color: #A0616A;
+    }
+}
+
+
+
+/* testimonial slide css */
+.white-card{
+    width: 420.05px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 3rem;
+}
+.blue-card{
+    width: 420.05px;
+    border-radius: 15px;
+    background: #BED8FF;
+    padding: 3rem;
+
+}
+.justify >p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #3A5987;
+    margin-top:1.5rem;
+    margin-left:1rem;
+}
+q{
+    font-family:'Poppins';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+}
+.justify{
+    display: flex;
+    justify-content: flex-start;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* .active {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 9.5s;
+  animation-name: fade;
+  animation-duration: 9.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 800px) {
+    q{
+        font-family:'Poppins';
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .white-card{
+        padding: 1rem;
+    }
+    .blue-card{
+        padding: 1rem;
+    
+    }
+    .justify{
+        padding:10%;
     }
 }
