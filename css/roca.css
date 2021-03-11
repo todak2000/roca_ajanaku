@@ -1,0 +1,395 @@
+body{
+    margin:0;
+}
+
+.bg-roca{
+    background-color: #002e56!important;
+    padding:0 10%;
+    width: 100%;
+}
+#navbarNav{
+    justify-content: flex-end!important;
+    font-family: 'Montserrat';
+}
+.nav-color {
+    color: #ffffff!important;
+}
+.footer {
+    width: 100%;
+    background-color: #002E56;
+    color: white;
+    padding-left: 10%;
+    position: absolute;
+}
+.footer-mobile {
+    display: none;
+}
+#footer-inner{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-one > a, .footer-one > p{
+    font-family: 'Montserrat Alternates';
+    color:#ffffff!important;
+}
+.lang{
+    display: flex;
+}
+.lang-mobile{
+    display: none;
+}
+.img-nav-mobile{
+    display: flex;
+}
+.mini {
+    font-family: 'Montserrat Alternates';
+    color:#ffffff!important;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+#demo{
+    background: url('../img/bg-carosal.png');
+    height:658px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left:10%;
+    padding-top:2%;
+    padding-right:10%;
+    padding-bottom:15%;
+}
+.demo-words{
+    width:50%;
+}
+.carousel-indicators {
+    bottom: 20vh!important;
+}
+#book{
+    width:70%;
+    line-height: 2rem;
+    font-family: 'Montserrat Alternates';
+    color:#ffffff!important;
+}
+#calendar{
+    width:20%;
+}
+.call2action{
+    width: 400px;
+    height: 50px;
+    background: #FF4A4A;
+    border-radius: 25px;
+    justify-content: center;
+    display: flex;
+}
+.call2action:hover{
+    background: #BDD7FF;
+}
+.carousel-indicators > li{
+    width: 15px!important;
+    height: 15px!important;
+    border-radius: 50%!important;
+    background-color: #FFB8B8;
+}
+.carousel-indicators > li:active{
+    background-color: #FF4A4A;
+}
+.demo-inner{
+    display: flex;  
+}
+.carousel-inner{
+    width:100%;
+}
+.demo-img{
+    width: 50%;
+    /* padding:0 10%;    */
+    padding-bottom:2rem;
+}
+.text-top{
+    font-size:1.8rem;
+    color:#ffffff;
+    font-family: 'Montserrat';
+}
+.text-main{
+    font-size:4.5rem;
+    color:#FFB8B8;
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+.mobile, .mobile2{
+    display: none;
+}
+
+/* .carousel-item>.desktop{
+    display: flex;
+} */
+.desktop2{
+    display: block;
+}
+.flexy{
+    display: flex;
+    justify-content: space-around;
+}
+#about-us, #services, #team{
+    padding:4% 10% 0 10%;
+}
+#services{
+    background-color: rgba(255, 74, 74, 0.16);
+}
+
+.right, .left, .lefty, .righty{
+    width:50%;
+}
+.right-team-top, .left-team-bottom{
+    width:65%;
+}
+.left-team-top, .right-team-bottom{
+    width:25%;
+}
+.name{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;;
+    text-align: center;
+    color: #3A5987;
+}
+.post{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FF6584;
+    margin-top:-1.5rem;
+}
+.right-team-top > p{
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 30px;
+    color: #A0616A;
+}
+.left-team-bottom > p{
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3A5987;
+}
+.right > p{
+    font-family: Poppins;
+    font-size: 24px;
+    line-height: 36px;
+    color: #3A5987;
+}
+.right > h3{
+    font-family: Poppins;
+    font-size: 48px;
+    color: #A0616A;
+}
+#team > h3{
+    font-family: Poppins;
+    font-size: 48px;
+    color: #A0616A;
+    text-align: center;
+}
+.lefty > p{
+    font-family: Poppins;
+    font-size: 24px;
+    line-height: 36px;
+    color: #A0616A;
+}
+.lefty > h3{
+    font-family: Poppins;
+    font-size: 48px;
+    color: #3A5987;
+}
+.left > h3{
+    display: none;
+}
+#red-line{
+    width: 203px;
+    height: 5px;
+    display: inline-block;
+    margin-bottom:0.7rem;
+    background-color: #A0616A;
+}
+#blue-line{
+    width: 203px;
+    height: 5px;
+    display: inline-block;
+    margin-bottom:0.7rem;
+    background-color: #3A5987;
+}
+.img-service{
+    margin-left:4rem;
+}
+.right-team-bottom >img{
+    display: block;
+}
+.left-team-bottom >img{
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .demo-words {
+        width: 100%;
+        text-align: center;
+    }
+    .right > h3{
+        display: none;
+    }
+    .img-service{
+        margin-left:0;
+    }
+    #blue-line{
+        display: none;
+    }
+    .lefty > h3{
+        font-size: 30px;
+        color: #3A5987;
+        text-align: center;
+    }
+    .left > h3{
+        font-family: Poppins;
+        font-size: 30px;
+        color: #A0616A;
+        display: block;
+        text-align: center;
+    }
+    #services{
+        padding-bottom:4rem;
+    }
+    .carousel-indicators {
+        bottom: 1vh!important;
+    }
+    #demo {
+        height: 480px;
+    }
+    .right > p, .lefty > p, .right-team-top > p, .left-team-bottom > p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top:0.7rem;
+    }
+   
+    .right, .left, .righty, .lefty, .left-team-top, .right-team-top, .left-team-bottom, .right-team-bottom{
+        width:100%;
+    }
+    .flexy{
+        display: block;
+    }
+    .call2action{
+        width: 270px;
+        height: 50px;
+        background: #FF4A4A;
+        border-radius: 25px;
+        justify-content: center;
+        display: flex;
+    }
+    .mtt{margin-top:4rem;}
+    #book{
+        width:70%;
+        font-size: 0.9rem;
+        line-height: 2rem;
+        font-family: 'Montserrat Alternates';
+        color:#ffffff!important;
+    }
+    .demo-img {
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .text-top{
+        font-size:1rem;
+        margin: 0;
+    }
+    .text-main{
+        font-size:2.5rem;
+        margin: 0;
+    }
+    .mobile, .mobile2{
+        display: block;
+    }
+.demo-inner, .desktop2{
+        display: none;
+    }
+    .img-nav{
+        max-width: 80%;
+        height: auto;
+    }
+    .navbar-brand{
+        width:70%!important;
+    }
+    .img-nav-mobile{
+        max-width: 80%;
+        height: auto;
+    }
+    .lang{
+        display: none;
+    }
+    .lang-mobile{
+        width:100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom:0.7rem;
+    }
+    .footer {
+        display: none;
+    }
+    .footer-mobile {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        background-color: #002E56;
+        color: white;
+        text-align: center;
+    }
+    .social-media{
+        display: block;
+    }
+    .mob-spacing{
+        margin-right: 1rem;
+    }
+    .left-team-bottom > .name2{
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;;
+        text-align: center;
+        color: #3A5987;
+    }
+    .left-team-bottom> .post2{
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #FF6584;
+        margin-top:-1.5rem;
+    }
+    .right-team-bottom >img, .left-team-bottom >.desktop,.right-team-bottom > .desktop2, .left-team-top > .desktop{
+        display: none;
+    }
+    .left-team-bottom >img{
+        display: block;
+    }
+    .right-team-bottom >.mobile{
+        color: #3A5987;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top:0.7rem;
+    }
+    #red-line{
+        display: none;
+    }
+    #team > h3{
+        font-family: Poppins;
+        font-size: 30px;
+        color: #A0616A;
+    }
+}
