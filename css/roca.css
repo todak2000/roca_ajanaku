@@ -88,6 +88,14 @@ body{
     justify-content: center;
     display: flex;
 }
+.call2meeting{
+    width: 100%;
+    height: 50px;
+    background: #A0616A;
+    border-radius: 25px;
+    justify-content: center;
+    display: flex;
+}
 .call2action:hover{
     background: #BDD7FF;
 }
@@ -136,7 +144,7 @@ body{
     display: flex;
     justify-content: space-around;
 }
-#about-us, #services, #team{
+#about-us, #services, #team, #contact-us{
     padding:4% 10% 0 10%;
 }
 #services{
@@ -146,7 +154,12 @@ body{
     background-color: #3A5987;
     padding: 2% 10% 4% 10%;
 }
-
+.p-red{
+    font-family: Poppins;
+    font-size: 24px;
+    line-height: 36px;
+    color: #A0616A!important;
+}
 .right, .left, .lefty, .righty{
     width:50%;
 }
@@ -252,6 +265,12 @@ body{
 .left-team-bottom >img{
     display: none;
 }
+#contact-line{
+    width: 3px; 
+    height: 250px; 
+    background-color: #8F1F1F; 
+    margin-right:20px;
+}
 @media only screen and (max-width: 800px) {
     .demo-words {
         width: 100%;
@@ -278,6 +297,7 @@ body{
         display: block;
         text-align: center;
     }
+    
     #services{
         padding-bottom:4rem;
     }
@@ -287,7 +307,7 @@ body{
     #demo {
         height: 480px;
     }
-    .right > p, .lefty > p, .right-team-top > p, .left-team-bottom > p{
+    .right > p, .lefty > p, .right-team-top > p, .left-team-bottom > p,.lefty > div > p{
         font-size: 16px;
         line-height: 24px;
         margin-top:0.7rem;
@@ -303,6 +323,14 @@ body{
         width: 270px;
         height: 50px;
         background: #FF4A4A;
+        border-radius: 25px;
+        justify-content: center;
+        display: flex;
+    }
+    .call2meeting{
+        width: 100%;
+        height: 50px;
+        background: #A0616A;
         border-radius: 25px;
         justify-content: center;
         display: flex;
@@ -365,6 +393,8 @@ body{
         background-color: #002E56;
         color: white;
         text-align: center;
+        padding-top:2rem;
+        padding-bottom: 2rem;
     }
     .social-media{
         display: block;
@@ -459,6 +489,7 @@ q{
     display: flex;
     justify-content: flex-start;
 }
+
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -522,5 +553,16 @@ img {vertical-align: middle;}
     }
     .justify{
         padding:10%;
+    }
+    .contact{
+        padding:0;
+    }
+    .p-red{
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 0.7rem;
+    }
+    #contact-line{
+        display: none;
     }
 }
