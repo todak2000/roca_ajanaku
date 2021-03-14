@@ -7,6 +7,9 @@ body{
     padding:0 10%;
     width: 100%;
 }
+.nav-link{
+    font-size: 0.85rem!important;
+}
 #navbarNav{
     justify-content: flex-end!important;
     font-family: 'Montserrat';
@@ -156,8 +159,8 @@ body{
 }
 .p-red{
     font-family: Poppins;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     color: #A0616A!important;
 }
 .right, .left, .lefty, .righty{
@@ -172,64 +175,64 @@ body{
 .name{
     font-family: Poppins;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
     text-align: center;
     color: #3A5987;
 }
 .post{
     font-family: Poppins;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
     text-align: center;
     color: #FF6584;
     margin-top:-1.5rem;
 }
 .right-team-top > p{
     font-family: Poppins;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #A0616A;
 }
 .left-team-bottom > p{
     font-family: Poppins;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #3A5987;
 }
 .right > p{
     font-family: Poppins;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     color: #3A5987;
 }
 .right > h3{
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 2.5rem;
     color: #A0616A;
 }
 #team > h3, #contact-us >h3{
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 2.5rem;
     color: #A0616A;
     text-align: center;
 }
 .lefty > p{
     font-family: Poppins;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     color: #A0616A;
 }
 #testimonials >h3{
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 2.5rem;
     color: #BDD7FF;
     text-align: center;
 }
 .lefty > h3{
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 2.5rem;
     color: #3A5987;
 }
 .left > h3{
@@ -259,6 +262,13 @@ body{
 .img-service{
     margin-left:4rem;
 }
+.fab{
+    color: #FFB8B8; 
+}
+.img-testimony {
+    max-width: 70%;
+    height: auto;
+}
 .right-team-bottom >img{
     display: block;
 }
@@ -286,7 +296,7 @@ body{
         display: none;
     }
     .lefty > h3{
-        font-size: 30px;
+        font-size: 1.8rem;
         color: #3A5987;
         text-align: center;
     }
@@ -405,16 +415,16 @@ body{
     .left-team-bottom > .name2{
         font-family: Poppins;
         font-weight: bold;
-        font-size: 24px;
-        line-height: 36px;;
+        font-size: 0.9rem;
+    line-height: 1.5rem;
         text-align: center;
         color: #3A5987;
     }
     .left-team-bottom> .post2{
         font-family: Poppins;
         font-weight: bold;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 0.9rem;
+    line-height: 1.5rem;
         text-align: center;
         color: #FF6584;
         margin-top:-1.5rem;
@@ -439,7 +449,7 @@ body{
     }
     #testimonials >h3{
         font-family: Poppins;
-        font-size: 30px;
+        font-size: 1.8rem;
     }
     /* #team > h3{
         font-family: Poppins;
@@ -448,7 +458,7 @@ body{
     } */
     #team > h3, #contact-us > h3{
         font-family: Poppins;
-        font-size: 30px;
+        font-size: 1.8rem;
         color: #A0616A;
     }
 }
@@ -473,8 +483,8 @@ body{
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
     color: #3A5987;
     margin-top:1.5rem;
     margin-left:1rem;
@@ -482,8 +492,8 @@ body{
 q{
     font-family:'Poppins';
     font-weight: 300;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
 }
 .justify{
     display: flex;
