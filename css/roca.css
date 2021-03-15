@@ -7,6 +7,10 @@ body{
     padding:0 10%;
     width: 100%;
 }
+.img-nav{
+    width: 150%;
+    height: auto;
+}
 .nav-link{
     font-size: 0.85rem!important;
 }
