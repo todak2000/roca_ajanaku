@@ -1,7 +1,92 @@
 body{
     margin:0;
 }
-
+.modal-body{
+    background-color: #002E56;
+    height:auto;
+    padding:0;
+}
+.modal-dialog {
+    max-width: 80%;
+}
+.flexy {
+    display: flex;
+    width:auto;
+    flex-wrap:wrap;
+    width:100%;
+    justify-content: center;
+}
+.modal-h3{
+    color:#E6E6E6;
+    font-weight: bolder;
+    font-family: 'Poppins';
+}
+.modal-p{
+    text-align: center;
+    color:#3A5987;
+    font-size: 0.85rem;
+    font-family: 'Poppins';
+}
+.flexy-left {
+width: 50%;
+/* height:200px; */
+padding:5%;
+background-color: #fff;
+}
+input {
+    font-family: 'Poppins';
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+input[type="file"] {
+    color:#fff;
+    font-size: 0.9rem;
+}
+.input-label{
+    color:#fff;
+    text-align: left;
+    font-family: 'Poppins';
+}
+.input-submit{
+    background-color: #FF4A4A;
+    border:0;
+    color:#fff;
+    font-family: 'Poppins';
+}
+.flexy-right {
+width: 50%;
+text-align: center;
+padding:5%;
+height:200px;
+}
+#fixed-bottom{
+    position: fixed;
+    bottom: 5vh;
+    right: 10%;
+    justify-content: flex-end;
+    width:100%;
+    display: flex;
+}
+.call2action{
+     
+    width: 15%;
+    height: 50px;
+    background: #FF4A4A;
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+    color:#ffffff!important;
+    font-weight: 700;
+    z-index: 4000;
+    margin-left: 20px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    line-height: 30px;
+    
+}
 .bg-roca{
     background-color: #002e56!important;
     /* background-color: #BDD7FF50!important; */
@@ -98,14 +183,7 @@ body{
 #calendar{
     width:20%;
 }
-.call2action{
-    width: 90%;
-    height: 50px;
-    background: #FF4A4A;
-    border-radius: 25px;
-    justify-content: center;
-    display: flex;
-}
+
 .call2meeting{
     width: 100%;
     height: 50px;
@@ -327,8 +405,28 @@ body{
     font-family: 'Poppins';
     font-weight: bold;
 }
-
+.modal-close{
+    text-align: right;
+    margin-right: 10px;
+}
+.list-group-item{
+    font-family: 'Poppins';
+    /* font-weight: bold; */
+    color: #3A5987;
+}
 @media only screen and (max-width: 800px) {
+    .flexy-left {
+        display: none;
+    }
+    .flexy-right {
+        width: 100%;
+    }
+    .modal-content {
+        height:70vh;
+    }
+    .modal-dialog {
+        max-width: 100%;
+    }
     .flex-container {
         display: flex;
         width:auto;
@@ -394,13 +492,33 @@ body{
         display: block;
         text-align:center;
     }
+    #fixed-bottom{
+        right: 0;
+        bottom:0;
+        justify-content: space-between;
+        width:100%;
+        display: flex;
+        /* padding-right: 7%;
+        padding-left: 7%; */
+    }
+    #join-us{
+        display: none;
+    }
     .call2action{
+     
         width: 100%;
         height: 50px;
         background: #FF4A4A;
-        border-radius: 25px;
-        justify-content: center;
-        display: flex;
+        text-align: center;
+        font-family: 'Poppins';
+        color:#ffffff!important;
+        font-weight: 700;
+        z-index: 4000;
+        margin-left: 0;
+        border-radius: 0;
+        font-size: 0.85rem;
+        line-height: 30px;
+        
     }
     .call2meeting{
         width: 100%;
@@ -415,7 +533,7 @@ body{
         width:70%;
         font-size: 0.75rem;
         line-height: 2rem;
-        font-family: 'Montserrat Alternates';
+        font-family: 'Poppins';
         color:#ffffff!important;
     }
     .demo-img {
