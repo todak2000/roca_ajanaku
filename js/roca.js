@@ -9,7 +9,7 @@ $(function(){
         let attach = document.getElementById("attach").files[0];
         $.ajax({
             // url:'http://127.0.0.1:8000/server/send/',
-            url:'https://roca-ajanaku.herokuapp.com/server/send/',
+            url:'https://roca-ajanaku.herokuapp.com/server/send',
             type:'POST',
             data:{
                 name: name,
