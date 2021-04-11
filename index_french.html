@@ -27,6 +27,7 @@
         <!-- JS FILES -->
         <script src="js/jquery-3.1.1.js"></script>
         <script src="bootstrap-4.5.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/roca.js"></script>
         <!-- SLICK SLIDER JS -->
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <title>Roca & Ajanaku: IP Law firm</title>
@@ -431,12 +432,12 @@
                   </button>
                   <h3 class="modal-h3">Rejoignez-nous</h3>
                   <Form method="POST" enctype="multipart/form-data">
-                      <input type="text" placeholder="Nom" class="form-control mb-3"/>
-                      <input type="text" placeholder="Email" class="form-control mb-3"/>
-                      <input type="text" placeholder="Téléphoner" class="form-control mb-3"/>
+                      <input type="text" placeholder="Nom" class="form-control mb-3" id="name"/>
+                      <input type="text" placeholder="Email" class="form-control mb-3" id="email"/>
+                      <input type="text" placeholder="Téléphoner" class="form-control mb-3" id="phonenumber"/>
                       <label for="exampleFormControlFile1" class="input-label">Téléchargez votre CV</label>
-                      <input type="file" class="form-control-file mb-3" id="exampleFormControlFile1">
-                      <button type="button" class="form-control input-submit">Envoyer</button>/>
+                      <input type="file" class="form-control-file mb-3"  id="attach">
+                      <button type="button" class="form-control input-submit" id="send_submit">Envoyer</button>
                   </Form>
               </div>
           </div>
