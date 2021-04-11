@@ -11,6 +11,9 @@ $(function(){
             success:function(data){
                 console.log(data)
             },
+            error:function(e){
+                console.log(e);
+            },
             cache: false,
             contentType: false,
             processData: false
