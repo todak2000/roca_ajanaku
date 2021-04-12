@@ -25,6 +25,7 @@ $(function(){
     $('#send_submit').on('click', function (e) {
         e.preventDefault();
         document.getElementById("wait_gif").style.display = "block";
+        document.getElementById("fileinfo").style.display = "none";
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let phonenumber = document.getElementById("phonenumber").value;
@@ -42,7 +43,8 @@ $(function(){
             success:function(response){
                 document.getElementById("wait_gif").style.display = "none";
                 console.log(response);
-                if(response.error != "0"){
+                if(response.error != 0){
+                    document.getElementById("fileinfo").style.display = "block";
                     document.getElementById('modal-texty').innerHTML = response.message;
                     document.getElementById('modal-texty').style.display = "block";
                     setTimeout(function(){ 
@@ -53,11 +55,7 @@ $(function(){
                 else{
                     document.getElementById("modal-h3").style.display = "none";
                     document.getElementById("email-image").style.display = "block";
-                    document.getElementById("fileinfo").style.display = "none";
                     document.getElementById('modal-texty').innerHTML = response.message;
-
-
-                    
                 }
             },
             error:function(e){
