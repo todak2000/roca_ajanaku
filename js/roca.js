@@ -24,7 +24,7 @@
 $(function(){
     $('#send_submit').on('click', function (e) {
         e.preventDefault();
-        
+        document.getElementById("wait_gif").style.display = "block";
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let phonenumber = document.getElementById("phonenumber").value;
@@ -40,23 +40,28 @@ $(function(){
                 resumelink : resumelink
             },
             success:function(response){
+                document.getElementById("wait_gif").style.display = "none";
                 console.log(response);
-                // if(response.error == false){
-                //     document.getElementById('modal_name').innerHTML = response.name;
-                //     document.getElementById('modal_date').innerHTML = response.date;
-                //     document.getElementById('modal_time').innerHTML = response.from +" - "+response.to;
-                //     $('#successModal').modal('show');
+                if(response.error != "0"){
+                    document.getElementById('modal-texty').innerHTML = response.message;
+                    document.getElementById('modal-texty').style.display = "block";
+                    setTimeout(function(){ 
+                        document.getElementById('modal-texty').style.display = "none"; 
+                    }, 5000);
                     
-                // }
-                // else{
-                //     document.getElementById('server_message_success').innerHTML = response.message;
-                //     document.getElementById("server_message_success").style.display = "block";
-                //     setTimeout(function(){ 
-                //         document.getElementById("server_message_success").style.display = "none"; 
-                //     }, 3000);
-                // }
+                }
+                else{
+                    document.getElementById("modal-h3").style.display = "none";
+                    document.getElementById("email-image").style.display = "block";
+                    document.getElementById("fileinfo").style.display = "none";
+                    document.getElementById('modal-texty').innerHTML = response.message;
+
+
+                    
+                }
             },
             error:function(e){
+                document.getElementById("wait_gif").style.display = "none";
                 console.log(e);
             },
         });

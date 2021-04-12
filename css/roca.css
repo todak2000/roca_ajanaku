@@ -21,6 +21,13 @@ body{
     font-weight: bolder;
     font-family: 'Poppins';
 }
+.modal-texty{
+    color:#fff;
+    font-family: "Poppins";
+}
+#email-image{
+    display: none;
+}
 .modal-p{
     text-align: center;
     color:#3A5987;
@@ -70,6 +77,10 @@ height:200px;
     justify-content: flex-end;
     width:100%;
     display: flex;
+}
+#wait_gif{
+    border-radius: 50%;
+    display: none;
 }
 .call2action{
      
