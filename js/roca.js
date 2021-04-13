@@ -43,7 +43,7 @@ $(function(){
             success:function(response){
                 document.getElementById("wait_gif").style.display = "none";
                 console.log(response);
-                if(response.error != 0){
+                if(response.error !== false){
                     document.getElementById("fileinfo").style.display = "block";
                     document.getElementById('modal-texty').innerHTML = response.message;
                     document.getElementById('modal-texty').style.display = "block";
