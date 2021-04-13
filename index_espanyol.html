@@ -431,8 +431,12 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
-                  <h3 class="modal-h3">Únete a nosotras</h3>
-                  <Form method="POST" enctype="multipart/form-data">
+                  <h3 class="modal-h3" id="modal-h3">Únete a nosotras</h3>
+                  <img src="img/wait_spanish.png" class="img-fluid" id="wait_gif"/>
+                  <img src="img/email_image.svg" class="img-fluid" id="email-image"/>
+                  <p class="modal-texty mt-2" id="modal-success">Hola, su CV ha sido entregado. Nos pondremos en contacto contigo lo antes posible. Gracias</p>
+                  <p class="modal-texty mt-2" id="modal-error">Lo sentimos, compruebe si no se le escapó ninguno de los campos del formulario y vuelva a intentarlo.</p>
+                  <Form id="fileinfo" enctype="multipart/form-data" method="post" name="fileinfo">
                       <input type="text" placeholder="Nombre" class="form-control mb-3" id="name"/>
                       <input type="text" placeholder="Correo electrónico" class="form-control mb-3" id="email"/>
                       <input type="text" placeholder="Teléfono" class="form-control mb-3" id="phonenumber"/>
