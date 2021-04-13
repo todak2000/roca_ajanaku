@@ -55,6 +55,7 @@ $(function(){
                 else{
                     document.getElementById("modal-h3").style.display = "none";
                     document.getElementById("email-image").style.display = "block";
+                    document.getElementById('modal-texty').style.display = "block";
                     document.getElementById('modal-texty').innerHTML = response.message;
                 }
             },
