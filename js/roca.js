@@ -48,7 +48,7 @@ $(function(){
                     // document.getElementById('modal-texty').innerHTML = response.message;
                     document.getElementById('modal-error').style.display = "block";
                     setTimeout(function(){ 
-                        document.getElementById('modal-texty').style.display = "none"; 
+                        document.getElementById('modal-error').style.display = "none"; 
                     }, 5000);
                     
                 }
