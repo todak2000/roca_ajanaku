@@ -45,8 +45,8 @@ $(function(){
                 console.log(response);
                 if(response.error !== false){
                     document.getElementById("fileinfo").style.display = "block";
-                    document.getElementById('modal-texty').innerHTML = response.message;
-                    document.getElementById('modal-texty').style.display = "block";
+                    // document.getElementById('modal-texty').innerHTML = response.message;
+                    document.getElementById('modal-error').style.display = "block";
                     setTimeout(function(){ 
                         document.getElementById('modal-texty').style.display = "none"; 
                     }, 5000);
@@ -55,8 +55,8 @@ $(function(){
                 else{
                     document.getElementById("modal-h3").style.display = "none";
                     document.getElementById("email-image").style.display = "block";
-                    document.getElementById('modal-texty').style.display = "block";
-                    document.getElementById('modal-texty').innerHTML = response.message;
+                    document.getElementById('modal-success').style.display = "block";
+                    // document.getElementById('modal-texty').innerHTML = response.message;
                 }
             },
             error:function(e){

@@ -21,9 +21,15 @@ body{
     font-weight: bolder;
     font-family: 'Poppins';
 }
-.modal-texty{
+#modal-error{
+    color:#FF4A4A;
+    font-family: "Poppins";
+    display: none;
+}
+#modal-success{
     color:#fff;
     font-family: "Poppins";
+    display: none;
 }
 #email-image{
     display: none;
