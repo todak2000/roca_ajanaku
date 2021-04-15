@@ -7,7 +7,7 @@ body{
     padding:0;
 }
 .modal-dialog {
-    max-width: 80%;
+    max-width: 60%;
 }
 .flexy {
     display: flex;
