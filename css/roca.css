@@ -283,6 +283,9 @@ height:200px;
 .left-team-top, .right-team-bottom{
     width:25%;
 }
+#mobile-p{
+    display: none;
+}
 .name{
     font-family: Poppins;
     font-weight: bold;
@@ -444,7 +447,7 @@ height:200px;
         width: 100%;
     }
     .modal-content {
-        height:70vh;
+        height:80vh;
     }
     .modal-dialog {
         max-width: 100%;
@@ -887,6 +890,10 @@ img {vertical-align: middle;}
         font-size: 1rem;
         margin: 0;
         margin-top: -3vh;
+    }
+    #mobile-p{
+        display: block;
+        color:#fff;
     }
 }
 @media only screen and (min-width: 710px)and (max-width: 830px) {
