@@ -277,6 +277,9 @@ height:200px;
 .right, .left, .lefty, .righty{
     width:45%;
 }
+.righty{
+    padding-top:7%;
+}
 .right-team-top, .left-team-bottom{
     width:65%;
 }
