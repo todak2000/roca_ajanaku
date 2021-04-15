@@ -275,7 +275,7 @@ height:200px;
     color: #A0616A!important;
 }
 .right, .left, .lefty, .righty{
-    width:50%;
+    width:45%;
 }
 .right-team-top, .left-team-bottom{
     width:65%;
@@ -421,6 +421,11 @@ height:200px;
     font-size: 1rem;
     font-family: 'Poppins';
     font-weight: bold;
+}
+.img-service:hover{
+    background-color: #3A5987;
+    cursor: pointer;
+    border-radius: 50%;
 }
 .modal-close{
     text-align: right;
